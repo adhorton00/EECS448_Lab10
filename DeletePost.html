@@ -1,0 +1,26 @@
+<?php include 'DeletePost.php';?>
+<!doctype html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <link rel="stylesheet">
+    <script>
+      function deletionSubmitCatch()
+      {
+        alert('Post Deleted.');
+      }
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Post Deletion</h1>
+      <a href="AdminHome.html">Admin Home Page</a>
+      <br><a href="index.html">Home Page</a>
+    </div>
+
+    <div>
+      <input type="button" value = "Delete Post" onclick = "deletionSubmitCatch()" />
+    </div>
+
+  </body>
+</html>

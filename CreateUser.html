@@ -1,0 +1,37 @@
+<?php include 'CreateUser.php';?>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet">
+
+    <script>
+      function userCreateCatch()
+      {
+        alert('user ' + document.getElementById("user").value + ' created.');
+      }
+    </script>
+
+  </head>
+  <body>
+    <div class="header">
+      <h1>User Creation</h1>
+      <a href="index.html">Home Page</a>
+    </div>
+    <div class="userCreationQuestion">
+      Please input user name:
+      <input type="text" id="user">
+      <script>
+        var userName = document.getElementById("user");
+        output.innerHTML = userName.value;
+      </script>
+
+
+      </div>
+
+      <div>
+        <input type="button" value = "Create User" onclick = "userCreateCatch()" />
+      </div>
+
+    </body>
+  </html>
